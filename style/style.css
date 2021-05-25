@@ -149,7 +149,20 @@ nav a:hover {
 
 section {
   display: flex;
-  margin-bottom: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+#sous_nav
+{
+  background: #6F4849;
+  margin: 10px;
+  box-shadow: 0px 2px 5px #1c1a19;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-size: 0.9em;
+  width: 15%;
 }
 
 article,
@@ -158,37 +171,43 @@ aside {
 }
 
 article {
+  flex: 1;
   background: #D67940;
-  margin-right: 20px;
-  flex: 3;
-  box-shadow: 0px 2px 5px #1c1a19;
-  border-radius: 5px;
-  padding: 10px;
-  color: white;
-}
-
-.ico_categorie {
-  vertical-align: middle;
-  margin-right: 8px;
-}
-
-article p {
-  font-size: 0.8em;
-}
-
-aside {
-  flex: 1.2;
-  position: relative;
-  background-color: #285185;
+  margin: 10px;
   box-shadow: 0px 2px 5px #1c1a19;
   border-radius: 5px;
   padding: 10px;
   color: white;
   font-size: 0.9em;
+  min-width: 250px;
+  max-width: 550px;
+}
+
+#conteneur
+{
+  margin: 20px;
+}
+
+#sous_conteneur
+{
+  
+}
+
+aside {
+  flex: 1;
+  background: #285185;
+  margin: 10px;
+  box-shadow: 0px 2px 5px #1c1a19;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  font-size: 0.9em;
+  min-width: 150px;
+  max-width: 250px;
 }
 
 #ico_reseau img {
-  border: 2px solid #706b64;
+  border: 1px solid #706b64;
   padding: 5px;
 }
 
@@ -202,9 +221,6 @@ aside {
   text-align: center;
 }
 
-#photo_sun img {
-  
-}
 
 aside img {
   margin-right: 5px;
@@ -214,8 +230,9 @@ aside img {
 
 footer {
   display: flex;
-  justify-content: flex-end;
-  padding-top: 25px;
+  justify-content: space-around;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background: #6F4849;
   box-shadow: 0px 2px 5px #1c1a19;
   border-radius: 5px;
@@ -231,20 +248,32 @@ footer h1 {
 }
 
 #tweet {
-  width: 28%;
+  width: 26%;
+  padding: 7px;
+  background: #D67940;
+  box-shadow: 0px 2px 5px #1c1a19;
+  border-radius: 5px;
 }
 
 #mes_photos {
-  width: 35%;
+  width: 34%;
+  padding: 7px;
+  background: #D67940;
+  box-shadow: 0px 2px 5px #1c1a19;
+  border-radius: 5px;
 }
 
 #mes_amis {
-  width: 31%;
+  width: 30%;
+  padding: 7px;
+  background: #D67940;
+  box-shadow: 0px 2px 5px #1c1a19;
+  border-radius: 5px;
 }
 
 #mes_photos img {
   border: 1px solid #181818;
-  margin-right: 2px;
+  margin-right: 3px;
 }
 
 #listes_amis
@@ -257,11 +286,11 @@ footer h1 {
 #mes_amis ul
 {
     list-style-image: url("../img/ico_liensexterne.png");
-    padding-left: 2px;
+    padding-left: 10px;
 }
 
 #mes_amis a
 {
     text-decoration: none;
-    color: #760001;
+    color: white;
 }
